@@ -1,7 +1,7 @@
 import telebot
 import os
 
-telegram_api_key = "8684464343:AAHGiSFDwTZCPBEpUFPXQkgD_dNo16b_hNs"
+telegram_api_key = os.getenv("8684464343:AAHGiSFDwTZCPBEpUFPXQkgD_dNo16b_hNs")
 
 bot = telebot.TeleBot(telegram_api_key)
  
