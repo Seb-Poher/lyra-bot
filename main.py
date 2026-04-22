@@ -3,7 +3,10 @@ import os
 
 telegram_api_key = os.getenv("8684464343:AAHGiSFDwTZCPBEpUFPXQkgD_dNo16b_hNs")
 
-bot = telebot.TeleBot(telegram_api_key)
+bot = telebot.TeleBot("8684464343:AAHGiSFDwTZCPBEpUFPXQkgD_dNo16b_hNs")
+
+if not telegram_api_key:
+    raise ValueError("La variable TELEGRAM_BOT_TOKEN est manquante.")
  
 WELCOME_MESSAGE = """Bienvenue dans le BDA Club 🔥
 (Business • Développement • Action)
